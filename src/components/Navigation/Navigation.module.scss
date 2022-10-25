@@ -1,0 +1,131 @@
+.navigationWrapper {
+  display: flex;
+  max-width: 1440px;
+  margin: 0 auto;
+  justify-content: space-between;
+  margin-top: 80px;
+  align-items: flex-start;
+  @media (max-width: 1465px) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  @media (max-width: 1024px) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .navigationList{
+    @media (max-width: 768px) {
+      max-width: 300px;
+      overflow: scroll;
+    }
+  }
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    @media (max-width: 1024px) {
+      margin-top: 25px;
+    }
+    @media (max-width: 768px) {
+      width: 600px;
+    }
+    li {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      letter-spacing: 0.015em;
+      padding: 13px;
+      background: #f3f3f3;
+      border-radius: 30px;
+      color: #333;
+      margin-right: 9px;
+      border: 1px solid #fff;
+      cursor: pointer;
+    }
+    .active {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      letter-spacing: 0.015em;
+      padding: 13px;
+      background: #333;
+      border-radius: 30px;
+      color: #fff;
+      margin-right: 9px;
+      border: 1px solid #fff;
+      cursor: pointer;
+    }
+  }
+  .navigationSorting {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    div{
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 0.015em;
+      color: #2C2C2C;
+      margin-right: 7px;
+    }
+    .buttonMenu {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.015em;
+      cursor: pointer;
+      margin-bottom: 10px;
+      .icon{
+        width: 15px;
+        height: 12px;
+      }
+    }
+    span{
+      color: orangered;
+      font-weight: bold;
+      width: 150px;
+      padding: 10px 0;
+      text-align: center;
+      background-color: #f3f3f3;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+    .navigationSortingChilde{
+      background-color: #f3f3f3;
+      display: flex;
+      flex-direction: column;
+      padding: 0 20px;
+      margin-top: 20px;
+      border-radius: 20px;
+      position: absolute;
+      z-index: 1;
+      li{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.015em;
+        color: #000000;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        min-width: 120px;
+        cursor: pointer;
+      }
+      a:hover {
+        color: orangered;
+        font-weight: bold;
+      }
+      .active {
+        color: orangered;
+        font-weight: bold;
+      }
+    }
+  }
+}
+

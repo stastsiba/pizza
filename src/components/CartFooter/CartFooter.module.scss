@@ -1,0 +1,59 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 830px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 100px;
+  .total {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .totalAmount {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 27px;
+      letter-spacing: 0.01em;
+      color: #000000;
+      .totalAmountSpan{
+        font-weight: bold;
+      }
+    }
+    .totalSum {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .totalSumSpan{
+        font-weight: bold;
+        color: orangered;
+      }
+    }
+  }
+  .button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+    .buttonBack{
+      background: #FFFFFF;
+      border: 1px solid #D3D3D3;
+      border-radius: 30px;
+      padding: 9px 35px;
+      color: #D3D3D3;
+      cursor: pointer;
+    }
+    .buttonPayment {
+      background: #FE5F1E;
+      border-radius: 30px;
+      padding: 9px 35px;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      text-align: center;
+      color: #FFFFFF;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+}

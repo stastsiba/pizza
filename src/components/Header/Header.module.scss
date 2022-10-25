@@ -1,0 +1,74 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1440px;
+  justify-content: space-between;
+  padding-top: 50px;
+  @media (max-width: 1465px) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+.headerIconBlock {
+  display: flex;
+  align-items: center;
+  .headerIconBlockImage {
+    width: 38px;
+    height: 38px;
+  }
+  .headerIconBlockText {
+    display: flex;
+    flex-direction: column;
+    margin-left: 17px;
+    h2 {
+      font-style: normal;
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 29px;
+      letter-spacing: 0.01em;
+      text-transform: uppercase;
+      color: #181818;
+    }
+    .headerIconBlockTextTitleBottom {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #7B7B7B;
+    }
+  }
+}
+
+.headerCartBlockButton {
+  display: flex;
+  align-items: center;
+  background: #FE5F1E;
+  border-radius: 30px;
+  max-width: 150px;
+  justify-content: center;
+  padding: 15px 19px;
+  p{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin-right: 13px;
+  }
+  div{
+    width: 1px;
+    height: 17px;
+    background-color: #fff;
+    margin-right: 13px;
+  }
+  span {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin-left: 5px;
+  }
+}
